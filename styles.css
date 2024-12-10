@@ -1,0 +1,610 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4caf50;
+    text-shadow: 0 0 5px #ffeb3b;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 25px; /* Adjust spacing between items */
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Hero Section */
+#hero {
+    background: url('Background.jpg') no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+.cta-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #388e3c;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section Titles */
+main {
+    padding: 20px;
+}
+
+h2.glow {
+    color: #388e3c;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 5px;
+    text-shadow: 0 0 10px #ffeb3b;
+}
+
+/* Shop Section */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.product-item {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #388e3c;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #388e3c;
+    text-shadow: 0 0 10px #ffeb3b;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 20px;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    color: #4caf50;
+    text-shadow: 0 0 10px #ffeb3b;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.banner {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 5px solid #4caf50;
+}
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffeb3b; /* Yellow background */
+    color: #333; /* Dark text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #eaa640, #eaa640); /* Gradient background */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+    animation: popup-fade-in 0.5s ease;
+}
+
+
+/* Center the "View Cart" button */
+.cart-btn-container {
+    text-align: center; /* Center the button */
+    margin: 20px 0; /* Add some space around the button */
+}
+
+/* Style for the "View Cart" button */
+.view-cart-btn {
+    background-color: #218838; /* Green background */
+    color: white;
+    padding: 20px 50px; /* Increase padding for a larger button */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.view-cart-btn:hover {
+    background-color: #cc4726; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight hover effect */
+}
+
+/* Button active (click) effect */
+.view-cart-btn:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+
+/* Modal Styles */
+/* Cart Modal Styling */
+/* Cart Modal Styling */
+#cart-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Adjust width to be responsive */
+    max-width: 600px; /* Maximum width for the modal */
+    background-color: rgb(168, 210, 180);
+    border-color: #010101;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: fixed; /* Position relative for close button placement */
+}
+
+/* Close Button Styling */
+#close-cart-modal {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #695e5e;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    line-height: 10px;
+}
+
+/* Scrollable Cart Content */
+#cart-modal-content {
+    max-height: 75vh; /* Adjust based on preference */
+    overflow-y: auto; /* Allow scrolling if content exceeds max height */
+    padding-right: 10px; /* Add some padding for better scrolling experience */
+    margin-top: 15px; /* Add space for the close button */
+}
+
+/* Cart Items Styling */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Proceed to Order Button */
+#proceed-to-order {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#proceed-to-order:hover {
+    background-color: #218838;
+}
+
+/* Styling for the cart items */
+/* Aligning cart item details and buttons */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item span {
+    flex: 1;
+}
+
+.cart-item button.remove-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cart-item button.remove-btn:hover {
+    background-color: #218838;
+}
+
+.cart-item input {
+    width: 50px;
+    text-align: center;
+    border-color: #010101;
+    margin-left: 10px;
+}
+
+/* Bold and larger font for total price */
+#total-price {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Style for Proceed to Order button */
+#proceed-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#proceed-btn:hover {
+    background-color: #254f27;
+}
+
+/* Basic modal styles */
+/* Cart Modal Styling */
+/* Order Form Modal Styling */
+#order-form-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1000; /* High priority on screen */
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Perfect center */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Maximum width */
+    background-color: rgb(166, 215, 180);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Ensure relative position for the close button */
+}
+
+/* Input fields styling */
+#order-form input,
+#order-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Additional form styling */
+#order-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#order-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#order-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.order-form-content button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.order-form-content button:hover {
+    background-color: #254f27;
+}
+
+/* Close button styles */
+.order-form-content .close-btn {
+    color: #403c3c;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.order-form-content .close-btn:hover {
+    color: black;
+}
+
+/* Custom Confirmation Modal Styles */
+.confirmation-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.confirmation-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    border: 2px solid #888;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.confirmation-modal h2 {
+    color: #33af37;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.confirmation-modal p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.confirmation-modal button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirmation-modal button:hover {
+    background-color: #27682a;
+}
+
+/* Close button styles */
+.confirmation-modal .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.confirmation-modal .close-btn:hover {
+    color: black;
+}

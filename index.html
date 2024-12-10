@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Kirana Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo-container">
+                <img src="Logo.png" alt="Hari Kirana Store Logo" class="logo">
+                <h1>Hari Kirana Store</h1> <!-- Glowing Heading -->
+                <img src="Logo.png" alt="Hari Kirana Store Logo" class="logo">
+            </div>
+            <div class="contact-info">
+                <p>Karhi, Benipatti, District-Madhubani</p>
+                <p>Contact 📞: <strong>7352490098</strong></p>
+                <p>Operating Hours: <strong>7:00 AM - 10:00 PM</strong></p>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <section id="home">
+                <h2 class=>Welcome to Hari Kirana Store!</h2>
+                    <p>Your one-stop shop for fresh vegetables delivered to your door.</p>
+                <img src="Banner1.png" alt="Fresh Vegetables" class="banner">
+            </section>
+    
+            <section id="shop">
+                <br>
+                <br>
+                <h2 class="glow">Shop Fresh Vegetables</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <h3>Potato</h3>
+                        <p>आलू</p>
+                        <br>
+                        <img src="Potato.png" alt="Potato" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹20/kg</p>
+                        <br>
+                        <button id="product1" onclick="addToCart('Potato',20)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Onion</h3>
+                        <p>प्याज</p>
+                        <br>
+                        <img src="Onion.png" alt="Onion" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹45/kg</p>
+                        <br>
+                        <button id="product2" onclick="addToCart('Onion',45)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Tomato</h3>
+                        <p>टमाटर</p>
+                        <br>
+                        <img src="Tomato.png" alt="Tomato" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹30/kg</p>
+                        <br>
+                        <button id="product3" onclick="addToCart('Tomato',30)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Brinjal</h3>
+                        <p>बैगन</p>
+                        <br>
+                        <img src="Brinjal.png" alt="Brinjal" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹40/kg</p>
+                        <br>
+                        <button id="product4" onclick="addToCart('Brinjal',40)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Cauliflower</h3>
+                        <p>फूलगोभी</p>
+                        <br>
+                        <img src="Cauliflower.png" alt="Cauliflower" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹35/kg</p>
+                        <br>
+                        <button id="product5" onclick="addToCart('Cauliflower',35)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Cabbage</h3>
+                        <p>पत्तागोभी</p>
+                        <br>
+                        <img src="Cabbage.png" alt="Cabbage" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹25/kg</p>
+                        <br>
+                        <button id="product6" onclick="addToCart('Cabbage',25)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Cucumber</h3>
+                        <p>खीरा</p>
+                        <br>
+                        <img src="Cucumber.png" alt="Cucumber" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹20/kg</p>
+                        <br>
+                        <button id="product7" onclick="addToCart('Cucumber',20)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Green Bean</h3>
+                        <p>हरी बीन्स</p>
+                        <br>
+                        <img src="Green Bean.png" alt="Green Bean" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹30/kg</p>
+                        <br>
+                        <button id="product8" onclick="addToCart('Green Bean',30)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Pea</h3>
+                        <p>मटर</p>
+                        <br>
+                        <img src="Pea.png" alt="Pea" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹50/kg</p>
+                        <br>
+                        <button id="product9" onclick="addToCart('Pea',50)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Chillies</h3>
+                        <p>मिर्च</p>
+                        <br>
+                        <img src="Chillies.png" alt="Chillies" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹40/kg</p>
+                        <br>
+                        <button id="product10" onclick="addToCart('Chillies',40)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Bittergourd</h3>
+                        <p>करेला</p>
+                        <br>
+                        <img src="Bitter Gourd.png" alt="Bittergourd" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹20/kg</p>
+                        <br>
+                        <button id="product11" onclick="addToCart('Bittergourd',20)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Capsicum</h3>
+                        <p>शिमला मिर्च</p>
+                        <br>
+                        <img src="Capsicum.png" alt="Capsicum" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹30/kg</p>
+                        <br>
+                        <button id="product12" onclick="addToCart('Capsicum',30)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Ginger</h3>
+                        <p>अदरक</p>
+                        <br>
+                        <img src="Ginger.png" alt="Ginger" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹80/kg</p>
+                        <br>
+                        <button id="product13" onclick="addToCart('Ginger',80)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Bottle Gourd</h3>
+                        <p>लौकी</p>
+                        <br>
+                        <img src="Bottle Gourd.png" alt="Bottle Gourd" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹10/pcs</p>
+                        <br>
+                        <button id="product14" onclick="addToCart('Bottle Gourd',10)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Lady's Finger</h3>
+                        <p>भिंडी</p>
+                        <br>
+                        <img src="Lady's Finger.png" alt="Lady's Finger" class="product-image">
+                        <br>
+                        <br>
+                        <p>Price: ₹15/kg</p>
+                        <br>
+                        <button id="product15" onclick="addToCart('Lady\'s Finger',15)">Add to Cart</button>
+                    </div>
+                </div>
+ 
+                <div id="popup" class="popup hidden">
+                    <span id="popup-text"></span>
+                </div>
+
+                <div class="cart-btn-container">
+                    <br>
+                    <button class="view-cart-btn" onclick="openCart()">View Cart 🛒</button>
+                </div>
+                              
+                
+                
+                <!-- Cart Modal Section -->
+<div id="cart-modal">
+     <!-- Close button (X) -->
+     <button id="close-cart-modal" onclick="closeCart()">X</button>
+    <div id="cart-modal-content">
+        <h2>Your Cart <br>"Enter Quantity in Kg (e.g., 0.5 for Half Kg)"</h2>
+        <br><div id="cart-items"></div>
+        <p id="total-price">Total: ₹0.00</p>
+    </div>
+    <button id="proceed-to-order" onclick="placeOrder()">Proceed to Order</button>
+</div>
+
+
+<!-- Order Form (will show when user clicks "Proceed to Order") -->
+<div id="order-form-modal" class="modal" style="display:none;">
+    <div class="order-form-content">
+        <span class="close-btn" onclick="closeOrderForm()">&times;</span>
+        <h2>Place Your Order</h2>
+        <br>
+        <form id="order-form">
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" placeholder="Enter your name" required>
+
+            <label for="customer-phone">Phone:</label>
+            <input type="text" id="customer-phone" placeholder="Enter your phone number" required>
+
+            <label for="customer-address">Address:</label>
+            <input type="text" id="customer-address" placeholder="Enter your address" required>
+
+            <button type="button" onclick="submitOrder()">Place Order</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Custom Confirmation Modal -->
+<div id="confirmation-modal" class="confirmation-modal" style="display: none;">
+    <div class="confirmation-modal-content">
+        <span class="close-btn" onclick="closeConfirmationModal()">&times;</span>
+        <h2>Order Placed Successfully!</h2>
+        <p id="confirmation-text"></p>
+        <button onclick="closeConfirmationModal()">OK</button>
+    </div>
+</div>
+
+                
+            </section>
+    
+            <section id="about">
+                <br>
+                <h2 class=>About Us</h2>
+                <br>
+                <p>At Hari Kirana Store, we believe in providing the freshest and highest quality vegetables to our customers. Our vegetables are sourced from local farms and are delivered directly to your door, ensuring that you get the best produce at the best prices.</p>
+                <br>
+                <p>We are committed to sustainability and supporting local farmers. By shopping with us, you are not only getting fresh vegetables but also helping your community.</p>
+                <br>
+                <p>We take pride in our customer service and strive to create a delightful shopping experience for everyone. Your satisfaction is our top priority!</p>
+                <br>
+            </section>
+    
+            <section id="contact">
+                <h2 class=>Contact Us</h2>
+                <p>If you have any questions, suggestions, or feedback, feel free to reach out!</p>
+                <p>Email 📩: <strong>info@harikirana.com</strong></p>
+                <p>Phone 📞: <strong>7352490098</strong></p>
+            </section>
+        </main>
+
+    <footer>
+        <p>&copy; 2024 Hari Kirana Store. All rights reserved.</p>
+        <p>Follow us on social media for updates and special offers!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
